@@ -87,7 +87,7 @@ model.summary()
 ##A continuación debemos compilar y entrenar el modelo.
 
 ### SOLUCIÓN
-model.compile(loss='mean_squared_error', optimizer='rmsprop')
+model.compile(loss='mean_squared_error', optimizer='Adam')
 model.fit(trainX, trainY, epochs=100, batch_size=1, verbose=2)
 
 ## 4 - Resultados
